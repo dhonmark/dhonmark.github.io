@@ -248,7 +248,7 @@ a {
   filter: brightness(74%);
   -webkit-filter: brightness(74%);
   -moz-filter: brightness(64%);
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -268,7 +268,6 @@ a {
     max-width: 100%;
   }
 }
-
 
 /* Contact Section */
 
