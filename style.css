@@ -68,7 +68,7 @@ footer {
   position: absolute;
   right: 40px;
   margin-top: 0px;
-  background-color: #16123f;
+  background-color: #8b8b8b;
 }
 .btn:hover {
   box-shadow: rgba(155, 155, 155, 0.1) 0px 8px 24px,
@@ -179,6 +179,37 @@ a {
   margin: 20px 45px 0 45px;
 }
 
+/* Progres bar about me  */
+
+.progress {
+  padding:0;
+  width:90%;
+  height:13px;
+  overflow:hidden;
+  background:#e5e5e5;
+  border-radius:10px;
+}
+
+.bar {
+	position:relative;
+  float:left;
+  min-width:1%;
+  height:100%;
+  background: #383099;
+}
+
+.percent {
+	position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  font-family:tahoma,arial,helvetica;
+  font-size:14px;
+  color:rgb(255, 255, 255);
+  font-weight: 700;
+}
+
 /* Recent Works Section */
 
 .tab {
@@ -285,7 +316,7 @@ form {
 
 [type="submit"] {
   width: 100%;
-  background: #16123f;
+  background: #8b8b8b;
   border-radius: 5px;
   border: 0;
   cursor: pointer;

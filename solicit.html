@@ -19,51 +19,50 @@
     />
     <title>Solicitation</title>
     <link rel="Webpage icon" type="device-icon/png" href="images/logoo.png" />
-
-    <style>
-      body {
-        /* background-color: #383838; */
-        background: linear-gradient(-45deg, #ffff, #87CEEB, #ffdf00, #23a6d5);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: auto;
-        background-repeat: no-repeat;
-      }
-
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="solicit.css">
   </head>
+
+  <!-- Splash Screen -->
+
+  <div id="splash-screen">
+    <div class="card-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm text-center mt-3">
+            <p class="label-top">My Gcash balance right now is</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm text-center">
+              <h2 class="label-price" style="color: #007DFE">₱500</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm text-center">
+              <p class="label-top ">
+                What are you waiting for? <br> Let's add more! Thank you for your <br> contribution.
+              </p>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
 
   <body>
     <div class="container my-4">
-      <!-- <div class="row">
-        <div class="col-lg d-flex justify-content-center my-4">
-          <h2 class="text-light font-weight-bold"></h2>
-        </div>
-      </div> -->
-
       <div class="row">
-        <div class="col-md d-flex justify-content-center ">
-          <img src="images/solicit-image.jpg" class="img-fluid" width="70%"/>
+        <div class="col-md d-flex justify-content-center">
+          <img src="images/solicit-image.jpg" class="img-fluid" width="70%" />
         </div>
       </div>
       <div class="row">
         <div class="col-md d-flex justify-content-center mt-2">
-            <img src="images/my_image.jpeg" class="img-fluid" width="70%">
+          <img src="images/my_image.jpeg" class="img-fluid" width="70%" />
         </div>
       </div>
     </div>
 
+    <script src="app.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
