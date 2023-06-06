@@ -185,6 +185,11 @@ footer {
   .banner-image::after {
     height: 850px;
   }
+  @media only screen and (max-width: 414px) {
+    #about {
+      margin-top: 50px!important;
+    }
+  }
 }
  
 /* About me & Skills Section */
