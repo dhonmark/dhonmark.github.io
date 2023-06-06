@@ -91,15 +91,38 @@ footer {
     left: 0%;
     margin: 15px 0;
   }
-  .btn_register {
-    position: relative;
-    left: 45%;
-    margin: 15px 0;
+}
+
+#my-photo-banner {
+  animation-name: buttons;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes buttons {
+  0% {
+    left: 0;
   }
-  .btn_login {
-    position: relative;
-    left: 45%;
-    margin: 15px 0;
+  /* 25% {
+    left: 3%;
+    transform: translate(12px, 9px);
+  } */
+  /* 50% {
+    left: 5%;
+    transform: translate(30px, 18px);
+  } */
+  /* 75% {
+    transform: translate(0px, 45px);
+  } */
+  100% {
+    transform: translate(15px, 50px);
+  }
+  0% {
+    transform: skew(5deg, 5deg);
+  }
+  100% {
+    transform: skew(-5deg, -5deg);
   }
 }
 
@@ -117,6 +140,53 @@ footer {
   }
 }
 
+.banner-image {
+  background-image: url("images/urban.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+} 
+.banner-image::after {
+  background-color: rgba(31, 31, 31, 0.719);
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .banner-image {
+    height: 550px;
+  }
+  .banner-image::after {
+    height: 550px;
+  }
+  #adjust-top {
+    margin-top: -20px!important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner-image {
+    height: 950px;
+  }
+  .banner-image::after {
+    height: 950px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-image {
+    height: 850px;
+  }
+  .banner-image::after {
+    height: 850px;
+  }
+}
+ 
 /* About me & Skills Section */
 
 div.accordion {
